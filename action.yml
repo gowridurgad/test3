@@ -5,9 +5,7 @@ runs:
   steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Create symbolic link for .nvmrc
-      run: ln -s ${{ github.action_path }}/requirements.txt
-      shell: bash
+   
     - name: Set up python
       uses: aparnajyothi-y/setup-python@Feature-request#476
       with:
